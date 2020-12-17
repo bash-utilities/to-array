@@ -205,7 +205,7 @@ to_array() {
     ##
     # Populate usage variable with parsed parameters
     local __usage__
-    read -r -d '' __usage__ <<EOF
+    read -rd '' __usage__ <<EOF
 Appends to array reference with parsed string elements
 
 
@@ -221,24 +221,24 @@ Appends to array reference with parsed string elements
     {Required} - String to convert to array
 
 
--s   --separator       <number | string>  ${_element__separator}
+-s   --separator       <number | string>  ${_element__separator@Q}
 
-    {Optional}
+    {Optional} - Character inserted between elements
 
 
 --strip-double-quotes  <Boolean>          ${_strip__double_quotes:-0}
 
-    {Optional}
+    {Optional} - If true, then strip double quotes during conversion
 
 
 --strip-single-quotes  <Boolean>          ${_strip__single_quotes:-0}
 
-    {Optional}
+    {Optional} - If true, then strip single quotes during conversion
 
 
 --strip-quotes        <Boolean>           ${_strip__quotes:-0}
 
-    {Optional}
+    {Optional} - If true, then strip double, and single, quotes during conversion
 
 
 -v    --verbose       <Counter | Boolean> ${_verbose:-0}

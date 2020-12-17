@@ -274,8 +274,8 @@ EOF
         return 0
     fi
 
-    # shellcheck disable=SC2206
-    local -a _element__words=( ${_input} )
+    local -a _element__words
+    IFS=' ' read -ra _element__words <<<"${_input}"
     local _element__word
     local _within__single_quotes
     local _within__double_quotes

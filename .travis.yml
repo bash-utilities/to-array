@@ -51,5 +51,5 @@ after_success:
   - printf 'after_success -> Tests passed!\n'
 
 after_script:
-  - echo 'after_script -> Is all good!'
+  - echo 'after_script -> Is all good!?'
 

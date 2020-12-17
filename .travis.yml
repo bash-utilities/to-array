@@ -42,7 +42,7 @@ before_script:
   - shellcheck to-array.sh
 
 script:
-  - .travis-ci/tests.sh
+  - bash .travis-ci/tests.sh
 
 after_failure:
   - printf 'after_failure asks -> Where did %s go wrong?\n' "${USER}"

@@ -1,0 +1,4 @@
+[submodule "to-array"]
+	path = modules/to-array
+	url = git@github.com:bash-utilities/to-array.git
+	branch = main

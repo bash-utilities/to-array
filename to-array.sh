@@ -281,6 +281,7 @@ EOF
 
     ##
     #
+    # shellcheck disable=SC2206
     local -a _element__words=( ${_input} )
     local _element__word
     local _within__single_quotes

@@ -274,11 +274,6 @@ EOF
         return 0
     fi
 
-    # if ! (( ${#_input} )); then
-    #     printf '%s\n' "${__usage__}"
-    #     return 1
-    # fi
-
     ##
     #
     # shellcheck disable=SC2206

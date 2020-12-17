@@ -274,8 +274,6 @@ EOF
         return 0
     fi
 
-    ##
-    #
     # shellcheck disable=SC2206
     local -a _element__words=( ${_input} )
     local _element__word

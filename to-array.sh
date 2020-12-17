@@ -216,7 +216,7 @@ Appends to array reference with parsed string elements
     {Required} - Target array reference to append element(s) to
 
 
--i    --input          <number | string>   ${_input@Q}
+-i    --input          <number | string>
 
     {Required} - String to convert to array
 
